@@ -1,0 +1,21 @@
+name: 提出功能建議
+description: 描述想改善的操作及使用情境。
+title: "[建議] "
+body:
+  - type: markdown
+    attributes:
+      value: 請集中一個具體建議；這是公開表格，不需要提供私人資料。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想改善甚麼情況？
+      description: 描述目前操作及遇到的困難。
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 希望點樣操作？
+      description: 可以描述理想步驟，或附上沒有私人內容的草圖。
+    validations:
+      required: true
