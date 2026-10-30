@@ -1,0 +1,78 @@
+name: 回報 Beta 問題
+description: 安裝、鍵盤、語音或翻譯有問題，請提供可重現資料。
+title: "[問題] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        多謝幫手測試 Q-Meow。每個 Issue 請集中一個問題。
+        **這是公開表格。請勿提供私人輸入文字、對話、設定備份、API key、密碼、token、keystore 或錄音。**
+  - type: input
+    id: version
+    attributes:
+      label: Q-Meow 完整版本
+      description: 請從 Q-Meow 設定頁複製版本；唔清楚可填「未知」。
+      placeholder: 例如 1.7.204-beta.1（只作格式示範）
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 手機型號及 Android 版本
+      placeholder: 例如 vivo V2337A，Android 16
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 問題類別
+      options:
+        - 安裝或覆蓋更新
+        - 鍵盤沒有彈出
+        - 中文或英文輸入
+        - 語音輸入
+        - 翻譯
+        - 手寫或其他工具
+        - 外觀或按鍵操作
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 點樣重現問題？
+      description: 請寫使用哪個 app、輸入模式及操作步驟；用沒有私人資料的短句測試。
+      placeholder: |
+        1. 開啟……
+        2. 切換至……
+        3. 按……之後出現……
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 預期與實際結果
+      description: 包括畫面錯誤碼及發生頻率，例如每次／偶爾。
+    validations:
+      required: true
+  - type: textarea
+    id: voice
+    attributes:
+      label: 語音資料（如適用）
+      description: 請填粵語／普通話／英文、長文開或關、選用引擎及錯誤碼；不需要貼說話內容。
+    validations:
+      required: false
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: 已刪除私人內容的診斷或截圖（可選）
+      description: 只提供與問題相關的少量記錄；先檢查及遮蓋私人文字與帳戶資料。不要貼設定備份。
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 公開前確認
+      options:
+        - label: 我已檢查文字及附件，沒有提供私人輸入內容、設定備份、API key、密碼、token、keystore 或錄音。
+          required: true

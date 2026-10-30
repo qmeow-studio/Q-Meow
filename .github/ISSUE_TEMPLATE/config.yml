@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安裝及更新方法
+    url: https://github.com/terence19770217-ctrl/Q-Meow/blob/main/docs/INSTALL.md
+    about: 先查看 APK 下載、啟用鍵盤及覆蓋更新指引。
+  - name: 已知問題與測試狀態
+    url: https://github.com/terence19770217-ctrl/Q-Meow/blob/main/docs/KNOWN_ISSUES.md
+    about: 查看已確認、仍待測試及尚未解決的情況。
