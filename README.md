@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/q-meow-logo.png" alt="Q-Meow 七彩貓咪 Q 字標誌" width="160" />
+
 # Q-Meow
 
 ### 打字、講嘢，用你習慣嘅方式。
